@@ -1,0 +1,567 @@
+<div class="header">
+    <div class="overLay" id="overLay" ng-scroll="go()">
+        <nav id="menu">
+            <span ng-class="nav==='home'|checkActive" ng-click="changeNav('home')"> Home </span>
+            <span ng-class="nav==='about'|checkActive"  ng-click="changeNav('about')"> About</span>
+            <span ng-class="nav==='portfolio'|checkActive"  ng-click="changeNav('portfolio')"> Portfolio</span>
+            <div class="socials">
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-github"></i>
+                <i class="fa fa-envelope-o"></i>
+            </div>
+        </nav>
+        <div class="stuff">
+            <div class="text">
+                <p>
+                    I'm ru-bee
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about">
+    <div class="text">
+        <div class="me"></div>
+        <p>
+            Hey there! I'm a freelance web designer & developer with over 5 years of experience.
+            Lately I've been building a lot of fun things over at <a href="">Mapster</a>,
+            mostly in <span>React</span>, <span>Wordpress</span> and <span>Mapbox.js</span>. Got a cool idea that you could use 
+            a hand with? Drop me a line!
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="tabContainer">
+    <div class="tab darkRed" ng-click="kendo=!kendo" ng-class="kendo|checkInactive">
+        Kendo
+    </div>
+    <div class="tab red" ng-click="music=!music" ng-class="music|checkInactive">
+        Music 
+    </div>
+    <div class="tab orange" ng-click="code=!code" ng-class="code|checkInactive">
+       Code 
+    </div>
+    <div class="tab purple" ng-click="life=!life" ng-class="life|checkInactive">
+       Life 
+    </div>
+</div>
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        Take your time
+        <div class="date">
+            July 31st 2017 | Life 
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        Take your time.<br><br>
+        Allow yourself to roam, allow your thoughts to wander. Discover, explore, be free.<br><br>
+
+        <span class="lyrics">
+            "When you're young<br>
+            Write your songs<br>
+            Take your time<br>
+            Stay strong<br>
+            Hold on<br>
+            Don't grow old<br>
+            Hang onto your heart<br>
+            Stay close to your soul<br>
+            Hold on<br>
+            Stand and decide<br>
+            Never say die"<br>
+        </span>
+        - The Bouncing Souls
+
+    </div>
+</div>
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        Needless abuse and the refusal to endure it
+        <div class="date">
+            July 31st 2017 | Life / Kendo
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        Those who accept abuse onto themselves are threatened by those who do not accept those same abuses. <br><br>
+
+        Case: yesterday I had the last practice for the provincial kendo team. It was early Sunday morning, and I woke up with bad period cramps.
+        I decided not to participate in the practice, I knew that it would be a painful experience if I did. I went to go watch instead. I ran this by Matt and Natalie,
+        both of whom figured it was a no brainer, of course don't practice under those circumstances. They have no stake in whether or not I 
+        practice though, so it's easy for them to say that. Now compare to those for whom it does matter:<br>
+        <span class="highlight">Tuna:</span> no issues. I text him before practice to let him know what was going on, and he had no qualms about it 
+        at all. He was happy I at least came to watch.<br><br>
+        <span class="highlight">D'Orangeville Sensei:</span> I ran in to him at the beginning of practice and told him what was going on. Again,
+        no issues. He was very understanding and emphasized the value of mitori-keiko (learning by watching).<br><br>
+        <span class="highlight">Marija, Vero, Ariyama Sensei:</span> Seemingly understanding, no outward objection, but I got an underlying sense of disapproval. <br><br>
+        <span class="highlight">Akane:</span> Nothing but her sympathy, encouragement, and signals that in any case, she was happy that I was there.
+        <br><br>
+        I think the response I received from everyone mirrors their own willingness to endure needless pain. Tuna, D'Orangeville Sensei and Akane
+        all have a fundamental sense of self worth and accomplishment that assures them that they do not need to go through senseless pain to 
+        prove themselves. They are at peace with this aspect of themselves. The approval (or disapproval) of other people doesn't change their actions in this regard.<br><br>
+        Marija, Vero, and Ariyama Sensei, are in the other camp. They are in positions where they stake their self worth on the opinions and values of other people.
+        They allow themselves to be treated poorly by others. It is justified in their minds. Their ability and willingess to suffer gives them a certain
+        right of passage. What they don't know, is that the only reason to go through that senseless pain is to rise from it and say "I don't deserve this".
+        There is no inherent value in pain. <br>
+        Their treatment of me is indicative of their positions on this spectrum. When I refuse to subject myself to needless suffering, it is treated either 
+        with compassion and support, or disapproval and a cold shoulder. <br>
+        An interesting thing to me, is that those who disapprove cannot voice their disapproval. They can't bring themselves to say what they are thinking,
+        which could be something like "I would put myself through that much pain, then why don't you?", or "what makes you so much better than me
+        that you don't have to go through hell like I do?". Their feelings stew, it cannot be discussed. Whereas those who are supportive are outwardly so.
+    </div>
+</div>
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        Thank you, Mother Nature
+        <div class="date">
+            July 21st 2017 | Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        When the mind, body, heart and spirit are overwhelmed, <br>
+        When all seems hopeless, pointless, impossible, <br>
+        When you can't help but feel tired all the time, <br>
+        Worn out, spread thin, <br>
+        And you can't control your thoughts or feelings.<br>
+        When you question everything, find solid ground no where, <br>
+        Doubt your capabilities, feel shame for what you've been put through, <br>
+        Shame for your weakness.<br><br>
+        And you don't know what to do. How to stop it. How to heal - <br><br>
+        Find comfort in mother nature.<br>
+        Walk in her woods,<br>
+        Swim in her oceans and lakes,<br>
+        Let the tides and the winds and the smells bring you back to yourself.<br>
+        Give it time.<br>
+        All the time you need.<br>
+        Your balance will return to you.<br>
+    </div>
+</div>
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        "Eternity is in love with the productions of time."
+        <div class="date">
+            May 6th 2017 | Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        It is your responsibility to bring unto earth that heavenly, cosmic connection to which only you have. <br>
+        Bring to earth and share with others your unique relationship and knowledge of the universe.<br>
+        Be unapologetically creative, expansive, curious.<br>
+        There will be no deeper failure in your life than to live without regard to what is greater than you. <br>
+        By doing only what has been done before, or can be done by others, you contribute nothing to the progress of the world.<br>
+        And you will die unfulfilled. <br><br>
+    </div>
+</div>
+
+
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        Pa'lante Pa'lante
+        <div class="date">
+            March 1st 2017 | Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+    You wake up. You're pale, weak, and there are bags under your eyes. Your head aches. Your muscles ache. <br><br>
+    You sigh and think to yourself "I guess today is going to be a hard day".<br><br>
+    You get to work.
+    </div>
+</div>
+
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        Love found me.
+        <div class="date">
+            February 4th 2017 | Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        I absolutely adore my boyfriend Matt. I could go on about his admirable traits and upstanding character, and elaborate on the details of my affection, but that's something that I'm happy to keep inside my own head and access at my own leisure. What I wanted to flesh out in writing is the circumstances of our relationship beginning, and one unique element that I find very interesting. <br><br>
+
+        Matt and I met at a kendo event in 2015. He had heard about me from his Sensei, and immediately took interest, while I thought he was a nice dude, and that was it. He made an effort to spend time talking to me, which I passed off entirely as him just being friendly. We parted ways after the event and I made nothing of it. A few months later I was part of a small group of people who received a message from him regarding another kendo event where he was living. Again, I made nothing of it.<br>
+
+        For some reason I decided to privately message him and thank him for the invite to the event, but let him know that I had a conflicting event that weekend. It sparked a conversation, and we had a few months of periodic back and forth. For the first month or two, I still was under the impression that he had no interest in me beyond anything friendly, and I was happy to just chat with someone new. At a certain point, I realized we were up late talking a lot and it finally dawned on me that maybe his interest went beyond just friendship. This realization had a remarkably minor effect on me. I remember being mildly flattered that someone was interested, but I didn’t really get excited about the prospect, in spite of thoroughly enjoying our conversations. <br><br>
+
+        Then things started to move a little faster. Matt came to visit Montreal and stayed at my apartment. Though I had a feeling he was interested in me, I wasn’t sure, so I played things safe and everything stayed very platonic. However after his visit I had no doubt that he wanted to get together. At this point I started to panic a little. I liked him, I found him interesting and kind and fun to be around. But I wasn’t smitten yet. I had this weird feeling of wanting to get to know him, and wanting his affection, but not being totally head over heels. In retrospect, I think I was simply attracted to his personality, but not attracted to him physically or romantically. Fortunately, that would come.<br><br>
+        
+        I eased myself into a relationship with him, and the physical attraction grew on me slowly but surely. Now I’m absolutely head over heels and think he’s hands down the most physically attractive man in the universe, but this took time. What’s interesting to me is that this is the first time I’ve ever given someone I wasn’t initially physically attracted to the light of day. At first I couldn’t really see myself with him. It was a take it or leave it kind of thing. But almost one year later, I’ve grown to love him more than anyone else. Furthermore, I find that he is by far the most suitable man I’ve ever been with. Our interests, characters, values and objectives line up so much more than anyone else in my past. We’re ridiculously compatible. <br><br>
+
+        Which leads me to ask, would I have chosen such a good partner? He chose me. He had the experience, or awareness, or gut feeling, or blind good luck, or whatever it was, to zero in on me. My choices in the past have been mediocre at best. I’ve been unable to identify a partner for myself who would bring the best out of me and both hold me in high esteem and challenge me to be better. I’ve chosen people I could never really connect with, could never really talk to, for whom I had to alter myself to be close to. <br><br>
+
+        But Matt saw in me someone he could spend his life with. I’m just thanking my lucky stars I had the good sense to run with it. I just wonder, how do people find each other? Is this something you can learn to do well? Or are you in the hands of fate? How come Matt found me, but I don’t know if I could have found him? Funny thing, this life thing. <br><br>
+    </div>
+</div>
+
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        Some Melodramatic Bullshit.
+        <div class="date">
+            January 28th 2017| Life
+        </div>
+    </div>
+    <div class="content">
+         I'm sick of hurting people. I'm sick of apologizing.<br><br>
+
+         My stress can be all-encompassing sometimes. When it washes over me, it's over, I belong to it.<br><br>
+         I have no more peace. I lose my centre. I can no longer control my emotions or my actions. It reminds me of my mom. It scares the shit out of me. All I want to do in these situations is hide from everything around me, because nothing seems to help me or calm me down other than just time and space and solitude. It’s an unconsolable frame of mind, it seems. I’m rendered useless within it, powerless. All I can do is sleep it off, try to turn my head off, and wait until it’s gone. <br><br>
+
+         I jump to the worst conclusions immediately. Anything remotely uncomfortable becomes viewed as a major threat. Anything that can be taken the wrong way, will be taken the wrong way. I become defensive. I become mean. And then I feel guilty. What a fucked up cycle. <br><br>
+
+         I feel that so much these days. This longing to be left the hell alone. I feel like as long as I have contact with people, I let them down. And I feel compelled to apologize to them. But now I’m just sick of it. I’m sick of expectations and this feeling of responsibility towards other people. If I am taking responsibility for everyone, then who the hell is taking responsibility for me? No one, it seems. So it’s probably all in my head. Why do I feel as though the world will fall apart if I take a break from worrying about everyone else and just look after myself? Surely, this is in my head. What am I doing to propagate this feeling? Where the fuck did it come from in the first place? <br><br>
+
+         You know what I have to do? My job. I have to make money. You know what else I have to do? Me neither. <br><br>
+
+         Why don’t I listen to myself anymore? Why don’t I stand firm for what I believe in? My time and my life is gnawed at and torn at, and I’m letting it happen. I used to tell people to fuck off when they deserved it, why am I so afraid to do that anymore? It’s exhausting fighting everyone, but what choice do I have? <br><br>
+
+         Now I see why people go insane with suspicion and doubt and fear. What a terrible feeling. What a bummer of an essay this has been. <br><br>
+    </div>
+</div>
+
+<div class="post" ng-show="!kendo">
+    <div class="title darkRed">
+        Kendo Review - 2016 - Part 1
+        <div class="date">
+            January 15th 2017| Kendo 
+        </div>
+    </div>
+    <div class="content">
+    Let’s roll back to <span class="var">2014</span>. It was my first truly hectic kendo year. It included 9 tournaments, over 10,000km on the road, 2 months spent training full time in the USA, Team Canada aspirations, my nidan test, and somewhat dramatic and not at all easy switching of dojos, to name a few. That year was hugely productive, as well as hugely exhausting, and by the time 2015 came around, I had a landed myself pretty significant burn out status, and a nasty heel injury. 
+    <br><br>
+
+    So <span class="var">2015</span> was fairly low key. I didn’t train at all the first couple months. Then I eased myself back into training, but struggled with issues of plateauing and general frustration and unhappiness with my kendo. I steered totally clear of shiai until November, which was weird after having lived shiai the year before. In April I traveled to Toronto to attend an all women’s seminar led by Kawamura Sensei, and it wound up being the first glimpse of light in my kendo dark age. I remember how much fun I had, and how relaxed I was when I practiced that weekend. I remember thinking how my technique seemed so much better that day than ever before, and how impactful it can be on your performance and development to practice in a place where you feel comfortable and supported. 
+    <br><br>
+
+    After that experience, I started to train more seriously, and took time to travel to New York City to attend another seminar led by Kawamura Sensei, as well as to visit Garden State Kendo club in Palisades Park, NJ. GSK is a Korean Dojo who I had first seen at the Boston taikai the previous year. Their kendo technique and spirit made such an impression on me, I knew I had to visit sometime. Training with them was an absolute delight. The members are so skilled, focused, and most importantly to me at the time, having so much fun. We got to go out with them afterwards and were treated to so much food and drink and talk, they were the perfect kendo hosts. It further stoked my kendo flame, and put me in a much better spot mentally to return to shiai in the fall. 
+    <br><br>
+
+    My first shiai back after almost exactly a year was the Boston taikai. A good tournament to back a comeback at, since the vibe there is so friendly and supportive. In spite of that, I had a very mediocre day. I was nervous and stiff. It was the longest stretch of time I had ever trained kendo and not done a shiai. Usually I had one every 3-4 months to keep myself in check, but this was a situation where I had changed my kendo so much since the last time I had done shiai, I barely recognized myself when I saw videos of it later. It wasn’t bad, in fact it was much better than ever before, but I had no idea how to apply all the things that I had learned. My seme was so much stronger, but I didn’t realize how threatening it had become and thus couldn’t capitalize on it. I wound up with a bronze medal in 1-2 Dan Women’s division. The following weekend I went to Granby, and having learned boat loads from my Boston experience, was able to make better use of my new skills. Still a bit tentative, but better than the weekend prior, I managed to secure 1st place in the women’s division. I admit, it was a big relief. The weekend after that I went to JCCC, but got knocked out second round. Still, I not a bad overall result for having been out of the game for a year, and it gave me good momentum going into 2016. So, without further ado, let’s talk about 2016.
+    <br><br>
+
+    My first event of the year was the <span class="var">Detroit </span> taikai in February. The 2013 tournament was both the first time I competed outside of Canada, and the first time I placed 1st (Mudansha), and I’ve always had fond memories of this tournament. I had more difficulty in 2016, and started my day by getting knocked out first round of women’s by giving up my 1 point lead. Rematching the footage, I looked so damn good, it was the best kendo I’d ever see myself do, for the first minute. Then, for reasons I really can’t explain, I fell apart and gave up two mens. I came off the court a whirlwind of emotions. I had about an hour to get my shit together before playing in the 2 Dan category, and my mind and emotions went everywhere from shame to anger to feeling like I wasn’t cut out for kendo, to wanting to kill everyone in the 2 Dan category. I settled on killing everyone in the 2 Dan category. I spent 30 minutes before my first fight pacing and raging, working myself up. A sempai from my dojo came up to me before my fight and I told him “this isn’t going to be pretty.” He said, “it doesn’t need to be, just win”. So I blasted my way to the finals. I don’t even remember who I fought or what I scored, really. I think it was 4 rounds to the finals, I remember in the semi final it went to encho and the first thing I did was throw a debana kote that I had been eyeing all match, and scored. The finals was against a 17 year old kid from Detroit I had seen play a few times before, who I think is about 6 foot 5. We had a good match, I had fun, but as hard as I tried, I just couldn’t stop his men. It came in so fast and from so far above me, that I wound up eating 2 of them. All in all, I felt good about that silver though, it was a hard fought medal, and a proof that I’m not so horribly useless at this martial art as I sometimes think I am.
+    <br><br>
+
+    The next event was the<span class="var"> U of T tournament </span> in March. I remember being concerned about my performance at this tournament, because at the time I had some issues at work that were causing me a tremendous amount of stress. Fortunately, I managed to turn the momentum around. I did a great warm up kirikaeshi with Marija, and off I went. Unfortunately, there was unnoticed mold in my water bottle that gave me awful diarrhea, and I was on the second day of my period. So I had some bodily obstacles that day. The first match I played was a struggle (to not soil myself), so I moved as little as possible, and relied as much as I could on seme. I scored a good men and moved on the to the second round. I had relatively little trouble up until semis, where I got to play Bora Choi from Jung Ko for the first time. After an 11 minute slog, I managed to score my first kote of the day (up until that point it was all mens). In the finals I had the great pleasure of playing Watarai Yu, an 18 year old high school champion visiting from Japan. She blasted through her side of the bracket without a sweat, with a wicked fast men. I made note of that men, and promptly lost the final match by two kotes. I think I hung on for a minute or two. I didn’t feel overwhelmed, I did have a blast, and boy did I get beat. As much as I hate to lose, that’s a loss that I can swallow. So another silver, and a couple firsts: my first win against a Team Canada player and my first podium finish in Ontario. I went home happy. If Detroit proved that I’m not terrible, Toronto proved that I’m getting better. 
+    <br><br>
+
+    Next up was<span class="var"> Cleveland </span> in April. I’m not going to get too much into the details of this one, other than to say that for various reasons I did not have a good day. Long story short, I felt some pressure after having come off two podium finishes, but mostly because I played on our club’s A team, and I really struggled under the pressure of my sempai. Mentally it was a weak day for me. I got on the court, and I really felt like I didn’t want to be there. From the first “hajime!” I was just waiting for it to be over. I so much wanted the day to end and to get the hell home. Miraculously, I won my first two matches in 1-2 Dan division, to finally be put out of my misery in the third round by some kid who had just come off a strong run in junior’s. I tried to psych myself up for women’s, but just couldn’t hit my stride, and lost first round. Teams was an absolute nightmare for me, in which I think I lost all but one of 4 matches. It’s 9 months later that I’m writing this, and I honestly have so little recollection of my fights that day, it was just such a wash. All I learned from this tournament was that I need to be careful not to get rattled when I play teams. 
+    <br><br>
+
+    At the end of April I had the chance to redeem myself at the <span class="var"> GSK </span> tournament. This was such a hyped tournament for me, since I couldn’t go the year before because it conflicted with the Kawamura Sensei seminar in Toronto. I had heard such good things about this tournament (and it’s famed after party) that I absolutely would not miss it this time around. I felt some anxiety and nerves though, after the complete flop that was Cleveland. I got a stern talking to from my dad not to waste my time going to tournaments and having a crappy time, which had a weird effect on my headspace. There was also a bit of a last minute kerfuffle because Team Canada decided to hold a gasshuku in Toronto that weekend. My sempai wanted me to go to the gasshuku, but I was adamant about going to the tournament. And boy howdy am I glad I did. The GSK tournament was a total blast. With a turnout of 225 participants, and over 40 players in the women’s Dan division, it made for a great pool. I had the chance to play a couple of highly ranked women, and it was some of the most fun I’ve ever had playing shiai. Any prior trepidation washed away as soon as I arrived at the gym in the morning. The vibe was so positive, and I got to see so many familiar faces from GSK and other AEUSKF clubs, it was just great. The other cool thing about the GSK tournament is that the organizers reach out to other Korean clubs who aren’t necessarily under the AUSKF umbrella to come compete. So the demographic was mostly Korean, and I got to see a whole slew of players I’d never seen before. It was the first time I heard someone say “mori!” when they attacked my men, and I got a huge kick out of that. 
+    <br>
+    As far as my performance is concerned, it was an interesting day. I started off playing in men’s 1-2 Dan division, and had a total slog of a match against a Korean guy. I think the match lasted 12 minutes or so, hard to say. Eventually I lost, I can’t remember by what, and was called to immediately start my match in women’s Dan on the adjacent court. Damn. So I hustled over to that court and got going on another slog of a match. This was a really interesting match for me. I played a girl who kept hitting me, men, kote, do even. She would land these strikes and I would think “surely that’s a point”, but the shimpan wouldn’t budge an inch. I was having a hell of a time adjusting to playing her, because the guy I had played moment’s before was fast and strong, and this girl was slow slow slow, but kept timing me out completely. I just couldn’t understand why they wouldn’t give her points. I kept throwing attacks at her that she seemed to easily block, until I realized she blocked her men too high and left her do open. So I whacked her do and that was that. Not really believing how fast the flags went up for me, thinking the shimpan’s arms were just heavy that day. Anyway, on to the second round. There I played a technical player, clearly experienced, but I didn’t feel very threatened by. I felt very dominant, yet had a hard time sealing the deal. Eventually I think I hit a kote. Then I got matched up with Misao Grivas Sensei from the Hamptons, and had a great fight with her. I was terrified to throw a men at her cause I’ve seen her bust out some crazy waza against men before, so it was a bit of a kote battle. The match went long, maybe 10 minutes. She pushed me out at one point, which I thought was really cool cause she’s about 15 years older than me and 8 inches shorter than me, and she was totally down to bully the hell out of me. Eventually I nabbed her kote, which sent me to the finals against Junko Winters Sensei from Kenshinkai. I had a good match with Winters Sensei, I think we went quite toe to toe, and she had to resort to a hiki-men in encho to take the win. I’m a bit bitter about this loss because I think I could have had her. Unlike my two other final’s losses this year, in this match I didn’t feel outclassed or out played, I really just feel like “damn… she got the point first, eh”. Ah well, next time we meet I’ll fight like hell. 
+    <br>
+    The afterparty of this tournament deserves a quick summary as well. I think this is a good juncture to talk about the location of the GSK Dojo, which is where the afterparty took place. As I mentioned earlier, GSK is located in Palisades Park, NJ, right across the bridge from Manhattan. Palisades Park in a town of about 50,000 people, 50% of which are Korean, and the GSK Dojo is situated on top of a liquor store. Hard to miss the impending fun. The afterparty was catered by a Korean restaurant, and with rockstar access to alcohol, it made for the best post-shiai 30 bucks I’ve ever spent. Everyone was having a ball. In true AEUSKF style, everyone was hanging out with everyone else, no division by rank, no division by dojo, everyone got along great. I had the opportunity to meet Lan Sensei, a 7th Dan EUSKF member. I could tell he was a little drunk when we were introduced, and the first thing he says to me is “I hate you!”. Phew, off to a good start now aren’t we. The second thing he says to me is, “I was head judge of your court, and your damn matches lasted forever. I was hungry. I needed to pee. I was wondering why the hell you wouldn’t just step in and take your points.” He proceeded to tell me that he was impressed by my seme, and completely pissed that I wouldn’t make use of it and just take the points I had set up. He told me I backed all my opponents into corners, but then got nice and gave them the territory back. “Kihon!” he said to me. “Keep practicing kihon so you can attack once you’ve set it up.” I was both flattered and ashamed by this, but it was the most useful advice I got about my kendo all year. 
+    <br>
+    Going back to that first match in women’s, I made the connection that perhaps they wouldn’t give my opponent any points because my seme was so much stronger. If a player is getting dominated, often it doesn’t matter what they do, the match will not go their way. This is just speculation of course, but it’s the only thing that makes sense to me. The other reason why they’d refuse to give her points when as soon as I connected a strike all three flags went up. There shouldn’t have been any bias, since I was unknown to all the shimpan on the court. 
+    <br>
+
+    In summary, GSK was a smashing success. Good performance, tons of fun, lessons learned. It had the whole package. Everything I would hope a kendo tournament to be. Can’t wait for this year.
+    <br><br>
+
+    Since I already have a mammoth post, I’ll wrap it up here and continue part two at a later date. Still to come: AEUSKF Taikai in May, Montreal Taikai and sandan grading in July, another Boston, Granby, JCCC, and Otsuuhai in Japan! 
+    </div>
+</div>
+
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        A Snapshot 
+        <div class="date">
+            January 13th 2017| Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+    It’s Friday night. I finished work today exhausted and headachy. I put in a big week, on top of a massive meeting on Tuesday, I did a massive amount of designing and coding. It was productive, no doubt, but I didn’t do much else with my time all week long, and it leaves me feeling dissatisfied. I wish I had exercised more. I wish I had played more music. I wish I had read more. Alas, the time I spent not working was time spent too exhausted or brain dead to get much done. All I could do was lay around the house or go on walks. The thing is, like most people, work causes me stress. I feel my stress in my body, it locks up my shoulders and causes me pain in my neck and even my throat, which in turn gives me headaches. It puts me on edge and shortens my fuse. Too often, by the end of my work day I’m just too tired to make any steps forward in other endeavours in my life, and this is driving me insane. 
+    <br><br>
+
+    It’s not all bad, of course. In a lot of ways, it’s really good. I just turned 26, and I make a good wage working almost entirely from home. It’s a pretty sweet setup. Currently I’m a bit stifled because I don’t have much flexibility in my location, since I have to meet with coworkers and clients every week or two, and often on short notice. But other than that it’s about as good of a work environment as anyone could ask for. I’m making decent money, certainly making good strides forward in my savings account. I’m gathering valuable work experience, and not just the kind you can use to pad your resume, but I’m genuinely improving at my job all the time. It’s a good thing I have going on, I just wish I didn’t have to put so much of my personal life on hold for it.
+    <br><br>
+
+    The other thing that is working out for me right now is my relationship. My boyfriend Matt is a total gem and I love him like crazy. I don’t love that he lives 350km and across a border from me. I especially don’t love that I can’t follow him along on all his travel plans, because my job isn’t offering that location flexibility right now. But he’s a sweetheart and an understanding one at that. No pressure from him, just frustration on my end from not being able to do the things I’d like to do. 
+    <br><br>
+
+    So what do I want to do? In no particular order, here’s all the stuff I’d be doing if I had more time and energy for it.
+    <br><br>
+
+    <span class="var">- Music.</span> I’d be working on a music project, probably recording, possibly writing. I want to see if I can shift careers from web development to music, or at least do both. I want to build a portfolio and then I want to perform that portfolio. I want to sing for people. I love it, people seem to love it, really there are so many reasons to do it. Also I’d be happy to teach, or to play for old folks or kids. I just want to share music with other people in some way. I think that’s the most important part. Sharing what you’ve got. If you horde your talents, they’ll destroy you. 
+    <br><br>
+
+    <span class="var">- Exercise. </span> Hard to say what’s causing me the biggest feeling of dissatisfaction right now, but there’s a good chance it might simply be the fact that I haven’t been working up a good sweat for the last few weeks. Tomorrow I’m going to go to Naginata practice and I’m looking forward to moving my damn body around. I’m going to start teaching kendo in a couple weeks too, so that should help me. My heel is in royally bad shape, so I’m not sure how much actual training kendo I can do, but I’m going to sort something out. Maybe just no fumikomi for a little while. Anyway, I think a nice balance of naginata, no-fumikomi kendo, and swimming will make me feel a lot better. Also, I think it would do me a world of good to make a habit of doing suburb every day. Even just 100 every day. Yeah, I’m going to start doing that as of tomorrow. 
+    <br><br>
+
+    <span class="var">- Language study. </span> When I was 20 or so, I had a goal of knowing 5 languages by the time I was 25. Well, my lazy ass just turned 26 and I still only speak 3 with some really basic Polish and even more basic Japanese. I keep getting tripped up because I start studying one language, and then I think “Oh, no, I should really spend my time on a different language.” Now I’ve added a 6th language into the mix: Korean (thanks, Matt). But I need to commit to one and just get it done. All three options (Polish, Japanese, Korean) are viable, since I have people close to me that I could practice with. I just need to do it. I think Polish is the one that is most important to me, so I should roll with that.
+    <br><br>
+
+    <span class="var">- General study/reading. </span> On the whole, I haven’t been so bad at this. Last year I finished a few novels, and I’ve usually got some history podcast on the go. Right now I’m working on Duncan’s Spanish Revolution, and enjoying it thoroughly. Earlier this week I finished a 650 page novel I’d been working on since the summer, that felt like a pretty sizeable accomplishment. There are a few books up next in line: Robbie Roberton’s book Testimony (which I can probably blow through in a couple weeks), The Heart of Europe, a short history of Poland (which I’ve been piecing at for 3 years), and Tolstoy’s short stories (I read all but one last year, I aught to just finish it off). I think I’ll try and finish some lighter reads before I embark upon another epic novel. Maybe this time I’ll read a Russian classic, maybe the Idiot or War and Peace.
+    <br><br>
+
+    <span class="var">- More coding. </span> I want to build the Canadian Naginata Federation website for Marija, and build a really beautiful design. Usually I’m working on apps that don’t offer much in terms of graphic design, and my job is figuring out how to funnel huge amounts of data to the user in a nicely organized, accessible way. I like this job, but I like playing with big spaces and images, too. So I want to build this website, and remake my own (again). And on a similar note:
+    <br><br>
+
+    <span class="var">- Branding. </span> I want to sort of “brand” some of the things that I can do. Namely coding and music. I want to build a website that represents me like a business, that displays my services and capabilities and how I can connect to other people and businesses. Both in coding and in music. I want to print business cards too, for my web development services as well as for my music services. In both cases, I need websites. Business cards I’m mostly keen on because of how many times I’ve been asked for them, and how many times I kicked myself for not having them.
+    <br><br>
+
+    Okay, okay, I need to wind down. This has been good. Actually, glancing back over all of this, it makes me realize I’m somewhat less of a loser than I often feel like I am. Cool, maybe I should do this more often. So, a conclusion would be good. What to say? Well, these points are the things that I would like to either accomplish or continue. I’m happy I put them in writing, and I hope that it will help me move in a direction that gives me more satisfaction. If, 6 months from now, I can say my body is in a bit better shape, I’ve moved forward in my Polish learning, read a book or two, played some music, and moved forward in my whole branding idea, I’ll be a damn happy camper. Actually I probably won’t even have noticed unless I make a point of noticing. I’ll try to make a point of noticing. 
+    <br><br>
+
+    Also, I want to get a cool camera and start taking cool pictures. 
+    <br><br>
+
+    Okay, bed time now. 
+    </div>
+</div>
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        Taking People's Shit.
+        <div class="date">
+            January 13th 2017| Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        Why should I take people's shit? Why should I make "exceptions" and be "understanding"? I keep telling people it's okay when they make my day worse. Why do I keep making excuses for people and experiences that hurt me? 
+    </div>
+</div>
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        Random Musing
+        <div class="date">
+            Dec 15th 2016 | Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        In my experience, one's ability to cope with the world is inversely proportionate to the strength of their analyitcal skills. 
+    </div>
+</div>
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        V2 ...
+        <div class="date">
+            Dec 15th 2016 | Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        Okay, let's try this again.<br><br>
+        I've got a huge backlog of stuff that I want to write about, and I keep using the following pathetic excuse: 
+       <br><br> 
+        "oh, I don't really 
+        like my current blog that much so I'll wait until I fix it up until I write." 
+        <br><br>
+        So there, I fixed the damn thing up. Now spill your guts, will ya? 
+    </div>
+</div>
+<div class="post" ng-show="!code">
+    <div class="title orange">
+        Firefox UL bottom padding issue
+        <div class="date">
+            Dec 10th 2015 | Code 
+        </div>
+        <div class="icon">
+            <i class="fa fa-code"></i>
+        </div>
+    </div>
+    <div class="content">
+        Man, cross-browser compatiblity debugging sucks. <br>
+        I have an issue where my ul is ignoring the bottom padding, which is apparently caused by overflow:scroll/overflow:auto;
+        <br><br>
+        At least <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=748518">bugzilla</a> talks about it. I'm not alone. 
+    </div>
+</div>
+<div class="post" ng-show="!code">
+    <div class="title orange">
+        SQL Cheat Sheet
+        <div class="date">
+            Dec 3rd 2015 | Code 
+        </div>
+        <div class="icon">
+            <i class="fa fa-code"></i>
+        </div>
+    </div>
+    <div class="content">
+        When I was picking up MySQL last year, I built myself a little cheat sheet. While there is a lot
+        of online documentation for SQL, I find the bulk of it to be overly complicated. SQL syntax is super
+        simple and straightforward. So here are the basics: <br><br>
+
+        <h1>Getting Started</h1>
+        show databases; <br>
+        use <span class="var">[database name]</span><br>
+        show tables;<br>
+        select * from <span class="var">[table name]</span>;<br>
+
+        <h1> Databases </h1>
+        <span class="info">Create a new database</span>
+        create database <span class="var">[new database name]</span>;<br>
+        <span class="info">Delete database</span>
+        drop database <span class="var">[database name]</span>;
+
+        <h1> Tables</h1>
+        <span class="info">Create new table</span>
+        create table <span class="var"> [table name] (column1 datatype, column2 datatype)</span>;<br>
+        ex: create table users (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, username VARCHAR(25), password VARCHAR(20));<br>
+        
+        <span class="info">Replace column name </span>
+        alter table <span class="var">[table name]</span> change <span class="var">[old column name] [new column name] [data type] </span>;<br>
+        
+        <span class="info">Modify data type</span>
+        alter table <span class="var">[table name]</span> modify <span class="var">[column, datatype]</span>;<br>
+
+        <span class="info">View columns and their info (datatype, etc)</span>
+        show columns from <span class="var">tablename</span>;
+
+        <h1>Insert/Delete/Update</h1>
+        <span class="info">Insert</span>
+        insert into <span class="var">[table name] (col1, col2) </span> values <span class="var">('value for col1', 'value for col2')</span>;<br>
+
+        <span class="info">Update</span>
+        update <span class="var">[table name]</span> set <span class="var">[column name]</span> 
+        = <span class="var">'[new data]' </span> where id=<span class="var">[id]</span>;
+        <span class="info">Delete</span>
+        delete from <span class="var">[table name]</span> where id=<span class="var">[id]</span>;
+
+    </div>
+</div>
+<div class="post" ng-show="!kendo">
+    <div class="title darkRed">
+        The 10 Virtues of Kendo by Sasaburo Takano Sensei
+        <div class="date">
+            Nov 24th 2015 | Kendo 
+        </div>
+    </div>
+    <div class="content">
+        <b>1)</b> A healthy body is a must. You must maintain good health and vitality in every part of your body.<br><br>
+        <b>2)</b> Develop a strong spirit. Your skill and spirit must be in perfect harmony. This will enable you to adapt and to cope
+        with even the harshest of environments.<br><br>
+        <b>3)</b> Training is critical. Your mind, spirit, hands and feet are to combine to work as one. Practice diligently to attain this.<br><br>
+        <b>4)</b> Experiment and use your mind. Doing this will bring you closer to enlightenment as well as improve your skill and
+        techniques.</br><br>
+        <b>5)</b> Fundamental Training. Practicing basic techniques must be done properly. Posture, stance, grip, line of sight, footwork,
+        attacking are critical. If you do not take these seriously, your skills will not evolve.<br><br>
+        <b>6)</b> Always train with a focused spirit. Your spirit controls your body. Whether it is during practice or tournaments, always
+        maintain a focused spirit and put forth your best effort.<br><br>
+        <b>7)</b> Train with passion from beginning to end. You will encounter many hardships and suffering.<br><br>
+        <b>8)</b> Do not become conceited or overconfident. Whether it is in your Kendo, your education, or even in your career,
+        arrogance is the root of all failure. This kind of attitude is the greatest detriment to your training.<br><br>
+        <b>9)</b> Maintain purity in your soul. Anger, deception, selfishness are enemies to your training. The path of Kendo is to train
+        seriously in order to build character.<br><br>
+        <b>10)</b> Live the way you train. Do not separate what you learned in Kendo from your everyday life. It is unfortunate if this
+        happens. By keeping the path of Kendo and the path of life as one, you will benefit greatly.<br><br>
+
+    </div>
+</div>
+
+<div class="post" ng-show="!kendo">
+    <div class="title darkRed">
+        Beginners - By Kim Taylor
+        <div class="date"> Nov 24th 2015 | Kendo </div>
+    </div>
+    <div class="content">
+        It has always bothered me how often I see kendo beginners being mistreated or disrespected.
+        Senior students are often too impatient, or unnecessarily harsh. I've always felt as though the 
+        attitude that beginners are a waste of time is a burden on one's kendo development. It demonstrates
+        a lack of patience and a lack of compassion, and is often accompanied by a lack of adequate respect 
+        for Kendo basics. <br>
+        A few months back I happened upon a little article on the subject written by Kim Taylor Sensei. Though
+        I believe this is originally written about Iaido, it all holds true for Kendo as well. <br><br>
+
+        "While beginners may seem a pain in the touchus, slowing down the class and making you repeat the same
+        old thing, they really are quite useful. For one thing having a beginner in class lets the previous
+        group of beginners know just how much they know. It's amazing how fast the previous beginners let go of
+        their worries that they aren't learning anything when they realize just how much they understand in 
+        comparison to the new guy.<br>
+        Beginners slow the class down, that's true, but this isn't a bad thing. Going fast during class can 
+        often mean going into automatic pilot, just repeating the kata without thinking about what you're doing
+        with them. You're supposed to break this stuff down and try to understand the lessons behind and beneath 
+        the kata but you can't really do that if you simply repeat them endlessly at speed. Beginners ask
+        questions, they trigger thoughts of why this movement instead of that one. <br>
+        As for repeating the same old thing, what makes us think we've repeated whatever we need to repeat to
+        the last bunch of beginners? I realized a few weeks ago that I hadn't told any of my students a quite
+        fundamental thing in several years. This happened when a beginner asked a question and I answered 
+        causing the rest of the class to give me the aha look. That's when I realized I had forgotten something
+        yet again.<br>
+        So celebrate the beginners, those few brave souls who wander into a class full of flying lumber and
+        put their faith into the kindness of the group. They in turn will be welcoming beginners in the way 
+        they were welcomed in years to come. <br><br>
+        Treat them well, you need them.<br><br>
+        Kim Taylor <br><br>
+        Sept 21, 2015"
+    </div>
+</div>
+<div class="post" ng-show="!code">
+    <div class="title orange">
+        Web Fonts
+        <div class="date">
+            Nov 24th 2015 | Code 
+        </div>
+        <div class="icon">
+            <i class="fa fa-code"></i>
+        </div>
+    </div>
+    <div class="content">
+       Looking around for a nice font for this site, and I stumbled across this helpful article: </br><br>
+       <a href="http://www.creativebloq.com/typography/free-web-fonts-1131610?page=1">The 35 Greatest Free Web Fonts</a>
+    </div>
+</div>
+<div class="post" ng-show="!music">
+    <div class="title red">
+        Hooked on the electric guitar
+        <div class="date">
+            Nov 23rd 2015 | Music
+        </div>
+        <div class="icon">
+            <i class="fa fa-music"></i>
+        </div>
+    </div>
+    <div class="content">
+        My brother went to Poland last weekend and left me one of his guitar amps. <br>
+        I plugged in the electric guitar I had kicking around (AKA "the fury"), and I can't stop, I'm totally hooked.<br>
+        I'm having the most fun playing music I have had in years.<br><br>
+        I think my poor piano is getting jealous though.<br>
+    </div>
+</div>
+<div class="post" ng-show="!life">
+    <div class="title purple">
+        I finally did it! 
+        <div class="date">
+            Nov 23rd 2015 | Life
+        </div>
+        <div class="icon">
+            <i class="fa fa-home"></i>
+        </div>
+    </div>
+    <div class="content">
+        I finally built that blog I've been talking about forever. Here we go!
+    </div>
+</div>
+<div class="footerContainerDepr"></div>
