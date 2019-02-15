@@ -1,14 +1,5 @@
 @niceBlue:#2d66b0;
-//@borders:1px solid lighten(@niceBlue, 20%);
-@borders:1px solid #000;
-@theme: #161a5a;
 @secondary: #7e12a4;
-@navHeight: 70px;
-
-@font : 'Muli', sans-serif;
-
-@font : 'Dosis', sans-serif;
-@font : 'PT Serif';
 @font: 'Noto Serif SC';
 
 h1 {
@@ -28,9 +19,6 @@ body {
     background  : #fff;
     font-size   : 22px;
     font-family : @font;
-    //background-image:url('http://static2.grsites.com/archive/textures/ss/ss044.jpg');
-    //background-image:url('http://static3.grsites.com/archive/textures/natfl/natfl222.jpg');
-    //background-image:url('http://static4.grsites.com/archive/textures/dgrey/dgrey048.jpg');
     //background-image:url('http://static1.grsites.com/archive/textures/multi/multi266.jpg');
 }
 
@@ -112,7 +100,6 @@ a {
                 border-radius: 50px;
                 padding: 11px 6px 0px;
                 margin: 0px 2px;
-                //background: lighten(@theme, 0%);
                 background: fade(#fff, 22%);
                 //color: #bdeead;
                 color: #70b2c9;
@@ -220,7 +207,8 @@ a {
     padding-top     : 100px;
     float           : left;
     background      : #eee;
-    background      : linear-gradient(#142042, #000000);
+    //background      : linear-gradient(#142042, #000000);
+    background      : linear-gradient(#233464, #000000);
     position        : relative;
     z-index         : 1;
     overflow        : hidden;
@@ -238,14 +226,14 @@ a {
         z-index: -1
     }
     h1 {
-        width       : 100%;
-        text-align  : center;
-        font-size   : 16px;
+        width           : 100%;
+        text-align      : center;
+        font-size       : 16px;
         text-transform  : uppercase;
         font-weight     : normal;
         margin-bottom   : 100px;
-        color           : #fff;
-        text-shadow     : 1px 1px #000;
+        //color           : #fff;
+        //text-shadow     : 1px 1px #000;
     }
 }
 [contact] {
@@ -254,14 +242,15 @@ a {
     float       : left;
     width       : 100%;
     background  : linear-gradient(to bottom right, #144f26, #190c0c);
-    background-image    : url('../images/pic19.jpg');
+    //background-image    : url('../images/pic19.jpg');
+    background-image    : url('../images/pic15.jpg');
     font-size   : 17px;
     color       : #fff;
     text-shadow : 1px 1px #000;
     //background-image:url('../images/pic3.jpg');
     background-image:url('../images/pic14.jpg');
     background-image:url('../images/pic15.jpg');
-    background-image:url('../images/pic19.jpg');
+    //background-image:url('../images/pic19.jpg');
     //background-image:url('../images/pic22.jpg');
     background-size : cover;
     position        : relative;
@@ -497,165 +486,6 @@ mainHeader {
         color: #7e12a4;
     }
 }
-/*
-.skills {
-    width: 100%;
-    margin: 30px 0px;
-    padding: 30px;
-    border-radius: 2px;
-    span {
-        width: 30%;
-        text-align: center;
-        display: inline-block;
-        margin: 10px 0px;
-        color: #4f7a9c;
-        text-shadow: 1px 1px #a1c2e4;
-    }
-}
-*/
-/*
-.itemWrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(~"100% - 60px");
-    margin: 0px 30px 30px;
-    .item {
-        flex-grow: 1;
-        flex: 1;
-        cursor: pointer;
-        //border: 1px solid #fff;
-        margin: 1%;
-        //min-width: 30.33%;
-        //max-width: 30.33%;
-        //min-width: calc(~"44% - 2px");
-        //max-width: calc(~"44% - 2px");
-        min-width: calc(~"30% - 2px");
-        max-width: calc(~"30% - 2px");
-        transition: 300ms;
-        font-family: @font;
-            background: fade(#fff, 89%);
-            border-radius: 2px;
-            border: 1px solid transparent;
-            box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-            &.blacktie {
-                .image {
-                    background-image: url('../images/blacktie.png');
-                }
-            }
-            &.birdiefire {
-                .image {
-                    background-image: url('../images/birdiefire.png');
-                }
-                h2 {
-                    //background: @blue;
-                }
-            }
-            &.ditidaht {
-                .image {
-                    background-image: url('../images/ditidaht.png');
-                }
-                h2 {
-                    //background: @purple;
-                }
-            }
-            &.spectrum {
-                .image {
-                    background-image: url('../images/spectrum.png');
-                }
-            }
-            &.wolfs {
-                .image {
-                    background-image: url('../images/wolfs.png');
-                }
-            }
-            &:hover {
-                border: 1px solid @secondary;
-                box-shadow: none;
-               .imgWrap span {
-                    opacity: 1;
-                    bottom: 20px;
-                    //border: 1px solid #ccc;
-               }
-            }
-            h2 {
-                width: 100%;
-                //background: @purple;
-                //background: @lime;
-                text-align: center;
-                margin: 0;
-                padding: 25px 0px 25px;
-                font-size: 13px;
-                //text-transform: uppercase;
-                font-weight: normal;
-                background: #fff;
-                //color: #fff;
-                color: @secondary;
-                letter-spacing: 1px;
-                //font-family: @funFont;
-                font-family: @font;
-                color: #000;
-            }
-            .imgWrap {
-                position: relative;
-                img {
-                    width: calc(~"100% - 40px");
-                    border: 1px solid #ccc;
-                    margin: 20px;
-                }
-                span {
-                    position: absolute;
-                    top: 20px;
-                    bottom: 100%;
-                    overflow: hidden;
-                    //bottom: 0px;
-                    right: 18px;
-                    left: 20px; 
-                    //border: 1px solid transparent;
-                    background: rgba(255,255,255, 0.95);
-                    color: @secondary;
-                    transition: 400ms bottom;
-                    cursor: pointer;
-                    p {
-                        padding: 15px;
-                        font-size: 16px;
-                        text-align: center;
-                        line-height: 22px;
-                        i {
-                            margin: 0px 10px;
-                            font-size: 22px;
-                        }
-                    }
-                }
-            }
-            .tech {
-                text-align: center;
-                //color: fade(@blue, 60%);
-                font-size: 13px;
-                margin: 10px 20px 20px;
-                line-height: 20px;
-                color: @secondary;
-                span {
-                    display         : inline-block;
-                    min-width       : 51%;
-                    border          : 1px solid rgba(103, 105, 80, 0.36);
-                    margin-top      : 9px;
-                    padding         : 10px;
-                    border-radius   : 50px;
-                    font-size       : 14px;
-                }
-            }
-            .image {
-               height: 300px;
-               background-size: contain;
-                //background-position: center;
-                margin: 20px;
-                border: 1px solid #ccc;
-                background-repeat: no-repeat;
-                position: relative;
-            }
-    }
-}
-*/
 #menu {
     transition: 600ms ease-in-out;
     &.sticky {
@@ -676,6 +506,7 @@ mainHeader {
         opacity : 1;
     }
 }
+@itemColor : #19132e;
 .itemWrap {
     display: flex;
     flex-wrap: wrap;
@@ -689,15 +520,17 @@ mainHeader {
         width       : calc(~"100% - 180px");
         transition  : 300ms;
         font-family: @font;
-        //background: fade(#fff, 89%);
+        //background: fade(#fff, 99%);
+        background  : #eef3ff;
         border-radius: 2px;
         //border: 1px solid transparent;
-        //box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
         display : flex;
         flex-wrap : nowrap;
         padding     : 50px;
         margin      : 15px 40px;
         align-items : center;
+        background  : radial-gradient(#fff, #fff, rgb(235, 240, 255));
         .leftChunk {
             flex : 1;
             text-align : center;
@@ -722,10 +555,10 @@ mainHeader {
         .rightChunk {
             flex : 1;
             p {
-                padding: 15px 0px;
-                font-size: 14px;
-                line-height: 30px;
-                color       : #dcdbe0;
+                padding     : 15px 0px;
+                font-size   : 14px;
+                line-height : 30px;
+                color       : @itemColor;
                 i {
                     margin: 0px 10px;
                     font-size: 22px;
@@ -745,7 +578,7 @@ mainHeader {
                 letter-spacing: 1px;
                 //font-family: @funFont;
                 font-family: @font;
-                color: #fff;
+                color: @itemColor;
                 border-bottom   : 1px solid;
             }
         }
@@ -776,13 +609,13 @@ mainHeader {
             span {
                 display         : inline-block;
                 //border          : 1px solid rgba(103, 105, 80, 0.36);
-                border          : 1px solid #dcdbe0;;
+                border          : 1px solid fade(@itemColor, 50%);
                 margin-top      : 5px;
                 padding         : 5px 15px;
                 margin-left     : 5px;
                 border-radius   : 50px;
                 font-size       : 12px;
-                color           : #dcdbe0;
+                color           : fade(@itemColor, 80%);
             }
         }
         .image {
