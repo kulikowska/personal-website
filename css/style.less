@@ -34,7 +34,6 @@ a {
     background-size     : cover;
     position            : relative;
     background-image    : url('../images/pic20.jpg');
-    background-attachment : fixed;
     .overLay {
         position    : absolute;
         overflow    : auto;
@@ -44,6 +43,8 @@ a {
         left        : 0;
         right       : 0;
         background  : radial-gradient(rgba(0, 0, 0, 0.36), rgba(0,0,0,1));
+        background  : linear-gradient(rgba(0,0,0,0.45), transparent);
+        background-attachment : fixed;
         nav {
             font-size   : 14px;
             padding     : 20px;
