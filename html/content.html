@@ -2,9 +2,9 @@
     <div class="overLay" id="overLay">
         <nav id="menu">
             <div>
-                <span ng-class="nav==='about'|checkActive"  ng-click="changeNav('about')"> About</span>
-                <span ng-class="nav==='portfolio'|checkActive"  ng-click="changeNav('portfolio')"> Portfolio </span>
-                <span ng-class="nav==='contact'|checkActive"  ng-click="changeNav('contact')"> Contact </span>
+                <a href="#about" du-smooth-scroll duration="500" du-scrollspy offset="20"> About</a>
+                <a href="#portfolio" du-smooth-scroll duration="500" du-scrollspy offset="100"> Portfolio </a>
+                <a href="#contact" du-smooth-scroll duration="500" du-scrollspy offset="80"> Contact </a>
             </div>
             <div class="socials">
                 <i class="fab fa-linkedin-in"></i>
@@ -19,11 +19,14 @@
     </div>
 </div>
 
-<div id="backToTop"><i class="fa fa-arrow-alt-circle-up"></i></div>
+<div id="backToTop">
+    <a class="fa fa-arrow-alt-circle-up" href="#header" du-smooth-scroll duration="1000" ></a>
+
+</div>
 
 <div about></div>
-<div portfolio></div>
-<div contact></div>
+<div portfolio id="portfolio"></div>
+<div contact id="contact"></div>
 
 
 

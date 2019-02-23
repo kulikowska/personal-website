@@ -1,5 +1,6 @@
 @niceBlue:#2d66b0;
 @secondary: #7e12a4;
+@secondary: #70b2c9;   
 @font: 'Noto Serif SC';
 
 h1 {
@@ -56,23 +57,26 @@ a {
             display     : flex;
             align-items : center;
             justify-content : space-between;
-            &.sticky {
-                background  : fade(#fff, 98%);
-                box-shadow  : 1px 1px 4px -3px #000;
-                z-index     : 1000;
-            }
-            span {
-                margin      : 5px 10px;
-                display     : inline-block;
-                cursor      : pointer;
-                transition  : 150ms;
-                padding-bottom: 3px;
-                color       : #fff;
-                &:hover {
-                    color   : @secondary;
+            &#menu {
+                transition: 600ms ease-in-out;
+                &.sticky {
+                    background: #000;
+                    z-index: 1000;
                 }
-                &.active {
-                    border-bottom   : 1px solid;
+                a {
+                    margin      : 5px 10px;
+                    display     : inline-block;
+                    cursor      : pointer;
+                    transition  : 150ms;
+                    text-decoration: none;
+                    padding-bottom: 3px;
+                    color       : #fff;
+                    &:hover {
+                        color   : @secondary;
+                    }
+                    &.active {
+                        border-bottom   : 1px solid;
+                    }
                 }
             }
         }
@@ -88,7 +92,13 @@ a {
                 margin: 0px 2px;
                 background: fade(#fff, 22%);
                 //color: #bdeead;
-                color: #70b2c9;
+                //color: @secondary;
+                color   : #fff;
+                transition  : 300ms;
+                cursor      : pointer;
+                &:hover {
+                    color   : @secondary;
+                }
             }
         }
         .text {
@@ -384,16 +394,6 @@ a {
         flex-direction   : column;
     }
 }
-
-#menu {
-    transition: 600ms ease-in-out;
-    &.sticky {
-        background: #000;
-        .socials i {
-            color   : #fff;
-        }
-    }
-}
 #backToTop {
     position    : fixed;
     bottom      : 40px;
@@ -401,6 +401,15 @@ a {
     font-size   : 34px;
     opacity     : 0;
     transition  : 600ms;
+    z-index     : 1000;
+    a {
+        text-decoration : none;
+        color           : @secondary;
+        transition      : 200ms;
+        &:hover {
+            color   : darken(@secondary, 15%);
+        }
+    }
     &.active {
         opacity : 1;
     }

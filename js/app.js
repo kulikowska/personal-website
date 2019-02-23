@@ -1,1 +1,2 @@
-var APP = angular.module('newCover', []);
+var APP = angular.module('newCover', ['duScroll']);
+

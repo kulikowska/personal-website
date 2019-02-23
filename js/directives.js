@@ -7,7 +7,6 @@ APP
         //template: TPL.content,
         link: function($scope, $element, $attributes) {
 
-        $scope.nav = 'portfolio';
 
         $scope.changeNav = function(where) {
             $scope.nav = where;
