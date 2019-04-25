@@ -1,28 +1,31 @@
 <div class="header" id="header">
     <div class="overLay" id="overLay">
         <nav id="menu">
-            <div>
+            <div class="site-nav">
                 <a href="#about" du-smooth-scroll duration="500" du-scrollspy offset="20"> About</a>
                 <a href="#portfolio" du-smooth-scroll duration="500" du-scrollspy offset="100"> Portfolio </a>
                 <a href="#contact" du-smooth-scroll duration="500" du-scrollspy offset="80"> Contact </a>
             </div>
             <div class="socials">
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-github"></i>
-                <i class="far fa-envelope"></i>
+                <a href="https://www.linkedin.com/in/ruby-kulikowska-49746693/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/kulikowska" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:rubykulikowska@gmail.com"><i class="far fa-envelope"></i></a>
             </div>
         </nav>
         <div class="text">
                <p>Hi, I'm <span class="name"> Ruby</span>.</p>
                <p>I'm a web developer & designer. </p>
+               <div>
+                <a href="#about" du-smooth-scroll duration="500" du-scrollspy offset="20"><button> About Me </button></a>
+                <a href="#portfolio" du-smooth-scroll duration="500" du-scrollspy offset="100"><button>My Work </button></a>
+               </div>
         </div>
     </div>
 </div>
 
-<div id="backToTop">
-    <a class="fa fa-arrow-alt-circle-up" href="#header" du-smooth-scroll duration="1000" ></a>
-
-</div>
+<a id="backToTop" href="#header" du-smooth-scroll duration="1000" >
+    <i class="fa fa-arrow-up"></i>
+</a>
 
 <div about></div>
 <div portfolio id="portfolio"></div>
