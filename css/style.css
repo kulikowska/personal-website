@@ -67,6 +67,12 @@ a:hover {
   z-index: 1000;
   background: linear-gradient(to right, #490446, #eeba6f);
 }
+@media screen and (max-width: 630px) {
+  .header .overLay nav#menu .site-nav {
+    width: 100%;
+    text-align: center;
+  }
+}
 .header .overLay nav#menu .site-nav a {
   margin: 5px 10px;
   display: inline-block;
@@ -357,7 +363,7 @@ a:hover {
   padding: 15px 0px;
   font-size: 14px;
   line-height: 30px;
-  color: #19132e;
+  color: #4b4b4b;
 }
 @media screen and (max-width: 990px) {
   [portfolio] .itemWrap .item p {
@@ -381,7 +387,7 @@ a:hover {
   font-weight: normal;
   letter-spacing: 1px;
   font-family: 'Quicksand', sans-serif;
-  color: #19132e;
+  color: #4b4b4b;
   border-bottom: 1px solid;
 }
 @media screen and (max-width: 990px) {
@@ -391,7 +397,7 @@ a:hover {
   }
 }
 [portfolio] .itemWrap .item .tech {
-  grid-row: 5 / 6;
+  grid-row: 5 / 7;
   grid-column: 2 / 3;
   font-size: 13px;
   text-align: center;
@@ -413,13 +419,13 @@ a:hover {
 }
 [portfolio] .itemWrap .item .tech span {
   display: inline-block;
-  border: 1px solid rgba(25, 19, 46, 0.5);
+  border: 1px solid rgba(75, 75, 75, 0.7);
   margin-top: 5px;
   padding: 5px 15px;
   margin-left: 5px;
   border-radius: 50px;
   font-size: 12px;
-  color: rgba(25, 19, 46, 0.8);
+  color: rgba(75, 75, 75, 0.9);
 }
 [portfolio] .itemWrap .item .image {
   height: 300px;
