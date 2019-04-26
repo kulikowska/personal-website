@@ -26,6 +26,25 @@ a {
 a:hover {
   color: #ffcccc;
 }
+.socials {
+  float: right;
+}
+.socials i {
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  width: 30px;
+  border-radius: 50px;
+  padding: 11px 6px 0px;
+  margin: 0px 2px;
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+  transition: 300ms;
+  cursor: pointer;
+}
+.socials i:hover {
+  color: #ff8679;
+}
 .header {
   width: 100%;
   min-height: 100%;
@@ -88,29 +107,10 @@ a:hover {
 .header .overLay nav#menu .site-nav a.active {
   border-bottom: 1px solid;
 }
-.header .overLay .socials {
-  float: right;
-}
 @media screen and (max-width: 630px) {
-  .header .overLay .socials {
+  .header .overLay nav .socials {
     display: none;
   }
-}
-.header .overLay .socials i {
-  height: 30px;
-  font-size: 18px;
-  text-align: center;
-  width: 30px;
-  border-radius: 50px;
-  padding: 11px 6px 0px;
-  margin: 0px 2px;
-  background: rgba(255, 255, 255, 0.22);
-  color: #fff;
-  transition: 300ms;
-  cursor: pointer;
-}
-.header .overLay .socials i:hover {
-  color: #ff8679;
 }
 .header .overLay .text {
   position: absolute;
@@ -204,6 +204,18 @@ a:hover {
     margin-left: 0px;
   }
 }
+.about section.intro .socials {
+  margin-top: 30px;
+}
+@media screen and (min-width: 630px) {
+  .about section.intro .socials {
+    display: none;
+  }
+}
+.about section.intro .socials i {
+  color: #b25555;
+  border: 1px solid;
+}
 .about section.skills {
   padding-top: 60px;
 }
@@ -235,6 +247,11 @@ a:hover {
 @media screen and (max-width: 990px) {
   .about section.skills .skillWrap div span {
     min-width: 71%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .about section.skills .skillWrap div span {
+    font-size: 12px;
   }
 }
 [portfolio] {
@@ -388,7 +405,7 @@ a:hover {
   letter-spacing: 1px;
   font-family: 'Quicksand', sans-serif;
   color: #4b4b4b;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #f3d2bd;
 }
 @media screen and (max-width: 990px) {
   [portfolio] .itemWrap .item h2 {
@@ -443,8 +460,6 @@ a:hover {
   background: linear-gradient(to bottom right, #144f26, #190c0c);
   font-size: 17px;
   color: #fff;
-  background-image: url('../images/pic14.jpg');
-  background-image: url('../images/pic15.jpg');
   background-image: url('../images/pic9.jpg');
   background-size: cover;
   background-attachment: fixed;
