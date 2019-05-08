@@ -1,2 +1,2 @@
-var APP = angular.module('newCover', ['duScroll']);
+var APP = angular.module('portfolio-site', ['duScroll']);
 
