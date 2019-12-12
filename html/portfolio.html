@@ -1,109 +1,18 @@
 <h1 data-aos="fade-up"> Recent Work</h1>
 
 <div class="itemWrap">
-
-    <div class="item mapbox" data-aos="fade" data-aos-duration="800">
+    <div class="item" ng-repeat="item in portfolioItems">
        <div class="imgWrap">
-           <img src="../images/portfolio/mapboxplugin.png"></img>
+           <img ng-src="../images/portfolio/{{item.image}}"></img>
        </div>
-        <a class="link"  href="https://www.mapster.me/wp-mapbox-gl-js/" target="_blank">Find out more!</a>
-       <h2>Wordpress Mapbox Plugin</h2> 
-        <p>
-            WP Mpabox GL GS Maps is a WordPress plugin built for developers and non developers alike to 
-            embed beautiful, interactive maps into their projects.
-        </p>
+        <a class="link" ng-if="item.link" href={{item.link}} target="_blank">
+           <span ng-if="item.isLinkDirect"> Visit Site!</span>
+           <span ng-if="!item.isLinkDirect">Find out More!</span>
+        </a>
+       <h2>{{item.title}}</h2> 
+        <p>{{item.desc}}</p>
         <div class="tech">
-            <span> React.js </span>
-            <span> Mapbox GL JS </span>
-            <span> WordPress</span>
-            <span> PHP</span>
-        </div>
-    </div>
-
-    <div class="item tarot" data-aos="fade" data-aos-duration="800">
-       <div class="imgWrap">
-           <img src="../images/portfolio/tarot.png"></img>
-       </div>
-        <a  class="link" href="http://www.tarotrouting.com/tarot-routing" target="_blank">Find out more!</a>
-       <h2>Tarot Routing</h2> 
-        <p>
-            A route optimisation tool built for Tarot Analytics. Originally built in React and Flux, most of my work on this 
-            product involved rewriting into Redux, as well as some tweaks to their React Native app. 
-        </p>
-        <div class="tech">
-            <span> React.js </span>
-            <span> Leaflet.js </span>
-            <span> Redux </span>
-            <span> React Native</span>
-        </div>
-    </div>
-
-    <div class="item ditidaht" data-aos="fade" data-aos-duration="800">
-       <div class="imgWrap">
-           <img src="../images/portfolio/ditidaht.png"></img>
-       </div>
-        <a class="link" href="http://www.learnditidaht.ca" target="_blank">Visit site!</a>
-       <h2>Learn Ditidaht</h2> 
-        <p>
-            The Ditidaht First Nation on Vancouver Island has only 6 fluent speakers today. 
-            In an effort to preserve the language, <a href="http://www.learnditidaht.ca" target="_blank">www.learnditidaht.ca</a>
-            was created. I've been lucky enough to contribute to this fun, interactive, language learning tool, which is built using a combination 
-            of WordPress and React. 
-        </p>
-        <div class="tech">
-            <span> React.js </span>
-            <span> Redux </span>
-            <span> WordPress </span>
-            <span> PHP </span>
-        </div>
-    </div>
-
-    <div class="item wolfs">
-       <div class="imgWrap">
-           <img src="../images/portfolio/wolf-map.png"></img>
-        </div>
-        <a class="link" href="http://www.rubykulikowska.com/wolf-map" target="_blank">Visit site!</a>
-       <h2>Yellowstone Wolf Map</h2> 
-        <p>
-        The Yellowstone Wolf Map is an interactive visualization of the reintroduction of wolf populations
-        into Yellowstone National Park. Still a work in progess, but you can check it out <a href="http://www.rubykulikowska.com/wolf-map" target="_blank"> here!</a>
-        </p>
-       <div class="tech">
-            <span> React.js </span>
-            <span> Mapbox GL JS </span>
-       </div>
-    </div>
-
-    <div class="item birdiefire" data-aos="fade" data-aos-duration="800">
-       <div class="imgWrap">
-           <img src="../images/portfolio/birdiefire.png"></img>
-       </div>
-       <h2>BirdieFire</h2> 
-        <p>
-            BirdieFire is an application used by golfers and their coaches to input and review their game data.
-            Built in Mapbox.js and React, users get to drag their shots around the course for easy data input 
-            and immediate shot statistics.
-        </p>
-        <div class="tech">
-            <span> React.js </span>
-            <span> MapboxGL</span>
-            <span> LESS  </span>
-        </div>
-    </div>
-
-    <div class="item blacktie" data-aos="fade" data-aos-duration="800">
-       <div class="imgWrap">
-           <img src="../images/portfolio/blacktie.png"></img>
-       </div>
-        <a class="link"  href="http://www.blacktieslopeside.com" target="_blank">Visit Site!</a>
-       <h2>Blacktie Skis Landing Page</h2> 
-        <p>
-        A little landing page built for Black Tie Ski Rentals of Whistler, BC. 
-        </p>
-        <div class="tech">
-            <span>HTML5 </span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
+            <span ng-repeat="tech in item.tech">{{tech}}</span>
         </div>
     </div>
 </div>
