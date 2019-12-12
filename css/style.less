@@ -3,6 +3,7 @@
 @leftColor  : #490446;
 @rightColor : #eeba6f;
 @hover      : #ff8679;
+@contactColor : #ff8679;
 
 @font       : 'Quicksand', sans-serif;
 
@@ -31,7 +32,7 @@ body {
 }
 
 a { 
-    color       : @niceBlue;
+    color       : @leftColor;
     transition  : 100ms;
     &:hover { 
         color   : @secondary;
@@ -299,7 +300,6 @@ header {
         .item {
             display     : grid;
             grid-template-columns : 1fr 1fr;
-            cursor      : pointer;
             min-width   : calc(~"100% - 180px");
             width       : calc(~"100% - 180px");
             transition  : 300ms;
@@ -440,7 +440,7 @@ header {
     background-size : cover;
     background-attachment : fixed;
     position        : relative;
-    color           : #ff8679;
+    color           : @contactColor;
     .email {
         display     : block;
         font-size   : 24px;
@@ -487,7 +487,10 @@ header {
                 transition  : 500ms;
                 white-space : nowrap;
                 a {
-                    color   : #fff;
+                    color   : lighten(@contactColor, 10%);
+                    &:hover {
+                        color   : @contactColor;
+                    }
                 }
             }
         }

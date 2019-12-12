@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
 }
 a {
-  color: #2f83f0;
+  color: #490446;
   transition: 100ms;
 }
 a:hover {
@@ -297,7 +297,6 @@ header .overLay .text button:hover {
 [portfolio] .itemWrap .item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  cursor: pointer;
   min-width: calc(100% - 180px);
   width: calc(100% - 180px);
   transition: 300ms;
@@ -499,7 +498,10 @@ header .overLay .text button:hover {
   white-space: nowrap;
 }
 [contact] .overLay .photo-creds span a {
-  color: #fff;
+  color: #ffb4ac;
+}
+[contact] .overLay .photo-creds span a:hover {
+  color: #ff8679;
 }
 #backToTop {
   position: fixed;
