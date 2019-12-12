@@ -72,11 +72,11 @@ APP
         link: function($scope, $element, $attributes) {
             $scope.portfolioItems = [
                 {
-                    title : 'Project 44',
+                    title : 'Project \x2744',
                     link  : 'https://www.project44.ca/',
                     isLinkDirect : true,
                     image : 'p441.png',
-                    desc  : 'Created for the Canadian Research and Mapping Association, Project \'44\ is a web based showcase of the Battle of Normandy. Centered around a map of the troop movements, it also includes fascinating unit war diaries and images. Currently in Beta.',
+                    desc  : 'Created for the Canadian Research and Mapping Association, Project \x2744 is a web showcase of the Battle of Normandy. Centered around a map of the troop movements, it includes fascinating unit war diaries and images. Currently in Beta.',
                     tech  : ['React.js', 'Redux', 'Mapbox GL JS']
                 },
                 {
@@ -84,7 +84,7 @@ APP
                     link  : 'http://www.learnditidaht.ca',
                     isLinkDirect : true,
                     image : 'ditidaht.png',
-                    desc  : 'The Ditidaht First Nation on Vancouver Island has only 6 fluent speakers today. In an effort to preserve the language, Learn Ditidaht was created. Ive been lucky enough to contribute to this fun, interactive, language learning tool, which is built using a combination of WordPress and React.',
+                    desc  : 'The Ditidaht First Nation on Vancouver Island has only 6 fluent speakers of their native language. In an effort to preserve the language, Learn Ditidaht was created. I\x27ve been lucky enough to contribute to this exciting, interactive language learning tool, which is built with a combination of WordPress and React.',
                     tech  : ['React.js', 'Redux', 'WordPress', 'PHP']
                 },
                 {
