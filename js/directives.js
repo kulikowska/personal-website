@@ -75,7 +75,7 @@ APP
                     title : 'Project \x2744',
                     link  : 'https://www.project44.ca/',
                     isLinkDirect : true,
-                    image : 'p441.png',
+                    image : 'p442.png',
                     desc  : 'Created for the Canadian Research and Mapping Association, Project \x2744 is a web showcase of the Battle of Normandy. Centered around a map of the troop movements, it includes fascinating unit war diaries and images. Currently in Beta.',
                     tech  : ['React.js', 'Redux', 'Mapbox GL JS']
                 },
@@ -97,7 +97,7 @@ APP
                 },
                 {
                     title : 'Tarot Routing',
-                    link  : 'http://www.tarotrouting.com/tarot-routing',
+                    link  : 'https://www.tarotanalytics.com/',
                     isLinkDirect : false,
                     image : 'tarot.png',
                     desc  : 'A route optimisation tool built for Tarot Analytics. Originally built in React and Flux, most of my work on this product involved rewriting into Redux, as well as some tweaks to their React Native app.',
