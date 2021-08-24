@@ -1,3 +1,12 @@
+.container {
+  max-width: 910px;
+  margin: auto;
+}
+@media screen and (max-width: 990px) {
+  .container {
+    margin: auto 30px;
+  }
+}
 html {
   background: #fff;
 }
@@ -45,7 +54,6 @@ a:hover {
 header {
   width: 100%;
   min-height: 100vh;
-  float: left;
   background-size: cover;
   position: relative;
   background-image: url('../images/hero-image.jpg');
@@ -152,23 +160,14 @@ header .overLay .text button:hover {
   color: #ff8679;
   border-color: #ff8679;
 }
-.about {
-  padding: 40px 100px 120px;
-  text-align: center;
-  line-height: 25px;
-  font-size: 15px;
-  float: left;
+[about] {
   background: #fff;
 }
-@media screen and (max-width: 990px) {
-  .about {
-    padding: 40px 50px 120px;
-  }
-}
-@media screen and (max-width: 630px) {
-  .about {
-    padding: 40px 20px 120px;
-  }
+.about {
+  padding: 40px 0px 120px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
 }
 .about section.intro {
   display: flex;
@@ -179,6 +178,7 @@ header .overLay .text button:hover {
 @media screen and (max-width: 990px) {
   .about section.intro {
     flex-direction: column;
+    padding-top: 0px;
   }
 }
 .about section.intro .me {
@@ -201,7 +201,7 @@ header .overLay .text button:hover {
   }
 }
 .about section.intro p {
-  margin-left: 100px;
+  margin-left: 60px;
   color: #0f1e3f;
   line-height: 30px;
 }
@@ -229,8 +229,16 @@ header .overLay .text button:hover {
   margin-bottom: 30px;
 }
 .about section.skills .skillWrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 12px;
+  justify-content: space-between;
   width: 100%;
+}
+@media screen and (max-width: 990px) {
+  .about section.skills .skillWrap {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .about section.skills .skillWrap h2 {
   font-size: 16px;
@@ -238,12 +246,12 @@ header .overLay .text button:hover {
   font-weight: normal;
 }
 .about section.skills .skillWrap div {
-  flex-grow: 1;
-  width: 33%;
+  display: flex;
+  flex-direction: column;
 }
 .about section.skills .skillWrap div span {
   display: inline-block;
-  min-width: 51%;
+  width: 180px;
   border: 1px solid rgba(103, 105, 80, 0.36);
   margin-top: 9px;
   padding: 10px;
@@ -252,7 +260,7 @@ header .overLay .text button:hover {
 }
 @media screen and (max-width: 990px) {
   .about section.skills .skillWrap div span {
-    min-width: 71%;
+    width: calc(100% - 20px);
   }
 }
 @media screen and (max-width: 630px) {
@@ -260,11 +268,18 @@ header .overLay .text button:hover {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 415px) {
+  .about section.skills .skillWrap div span {
+    max-width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 [portfolio] {
-  padding-top: 100px;
-  float: left;
-  background: #f5f5ef;
   position: relative;
+  padding: 100px 0;
+  background: #f5f5ef;
   z-index: 1;
   overflow: hidden;
 }
@@ -281,31 +296,29 @@ header .overLay .text button:hover {
   z-index: -1;
 }
 [portfolio] h1 {
+  margin-bottom: 100px;
   width: 100%;
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: normal;
-  margin-bottom: 100px;
 }
 [portfolio] .itemWrap {
   display: flex;
   flex-wrap: wrap;
-  width: calc(100% - 60px);
-  margin: 0px 30px 30px;
+  width: 100%;
 }
 [portfolio] .itemWrap .item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-width: calc(100% - 180px);
-  width: calc(100% - 180px);
+  min-width: calc(100% - 100px);
+  width: calc(100% - 100px);
+  margin: 15px 0px;
+  padding: 50px;
   transition: 300ms;
   font-family: 'Quicksand', sans-serif;
   border-radius: 4px;
-  padding: 50px;
-  margin: 15px 40px;
   background: #fff;
-  border: 1px solid #daa36b;
   border: 1px solid #eea4b2;
 }
 @media screen and (max-width: 630px) {
@@ -326,6 +339,31 @@ header .overLay .text button:hover {
   margin-bottom: 10px;
   overflow: hidden;
 }
+[portfolio] .itemWrap .item .imgWrap .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 300ms;
+  color: #ff8679;
+  text-decoration: none;
+}
+[portfolio] .itemWrap .item .imgWrap .overlay i {
+  font-size: 0px;
+  transition: 300ms;
+}
+[portfolio] .itemWrap .item .imgWrap:hover .overlay {
+  opacity: 1;
+}
+[portfolio] .itemWrap .item .imgWrap:hover .overlay i {
+  font-size: 30px;
+}
 @media screen and (max-width: 990px) {
   [portfolio] .itemWrap .item .imgWrap {
     grid-row: 5 / 7;
@@ -336,7 +374,7 @@ header .overLay .text button:hover {
 }
 [portfolio] .itemWrap .item .imgWrap img {
   transition: 300ms;
-  width: 99%;
+  width: calc(100% - 2px);
   max-width: 500px;
   border: 1px solid #ccc;
 }
@@ -438,7 +476,6 @@ header .overLay .text button:hover {
 [contact] {
   text-align: center;
   min-height: 90vh;
-  float: left;
   width: 100%;
   background: linear-gradient(to bottom right, #144f26, #190c0c);
   font-size: 17px;

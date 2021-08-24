@@ -9,6 +9,15 @@
 
 @midBreak   : 990px;
 @smallBreak : 630px;
+@tinyBreak  : 415px;
+
+.container {
+    max-width   : 910px;
+    margin      : auto;
+    @media screen and (max-width : @midBreak) {
+        margin : auto 30px;
+    }
+}
 
 html {
     background: #fff;
@@ -61,7 +70,7 @@ a {
 header {
     width               : 100%;
     min-height          : 100vh;
-    float               : left;
+    //float               : left;
     background-size     : cover;
     position            : relative;
     background-image    : url('../images/hero-image.jpg');
@@ -169,19 +178,14 @@ header {
         }
     }
 }
+[about] {
+    background  : #fff;
+}
 .about {
-    padding     : 40px 100px 120px;
+    padding     : 40px 0px 120px;
     text-align  : center;
     line-height : 25px;
-    font-size   : 15px;
-    float       : left;
-    background  : #fff;
-    @media screen and (max-width : @midBreak) {
-        padding: 40px 50px 120px;
-    }
-    @media screen and (max-width : @smallBreak) {
-        padding: 40px 20px 120px;
-    }
+    font-size   : 16px;
     section {
         &.intro {
             display         : flex;
@@ -189,7 +193,8 @@ header {
             align-items     : center;
             padding-top     : 60px;
             @media screen and (max-width : @midBreak) {
-                flex-direction: column;
+                flex-direction  : column;
+                padding-top     : 0px;
             }
             .me {
                 background-image:url('../images/me2.jpg');
@@ -209,7 +214,7 @@ header {
                 }
             }
             p {
-                margin-left : 100px;
+                margin-left : 60px;
                 color       : #0f1e3f;
                 line-height : 30px;
                 @media screen and (max-width : @midBreak) {
@@ -233,29 +238,41 @@ header {
                 margin-bottom   : 30px;
             }
             .skillWrap {
-                display : flex;
-                width   : 100%;
+                display                 : grid;
+                grid-template-columns   : auto auto auto;
+                grid-gap                : 12px;
+                justify-content         : space-between;
+                width                   : 100%;
+                @media screen and (max-width : @midBreak) {
+                    grid-template-columns : 1fr 1fr 1fr;
+                }
                 h2 {
                     font-size       : 16px;
                     text-transform  : uppercase;
                     font-weight     : normal;
                 }
                 div {
-                    flex-grow   : 1;
-                    width       : 33%;
+                    display         : flex;
+                    flex-direction  : column; 
                     span {
                         display         : inline-block;
-                        min-width       : 51%;
+                        width           : 180px;
                         border          : 1px solid rgba(103, 105, 80, 0.36);
                         margin-top      : 9px;
                         padding         : 10px;
                         border-radius   : 50px;
                         font-size       : 14px;
                         @media screen and (max-width : @midBreak) {
-                            min-width       : 71%;
+                            width   : calc(~"100% - 20px");
                         }
                         @media screen and (max-width : @smallBreak) {
                             font-size : 12px;
+                        }
+                        @media screen and (max-width : @tinyBreak) {
+                            max-width       : 90px;
+                            white-space     : nowrap;
+                            overflow        : hidden;
+                            text-overflow   : ellipsis;
                         }
                     }
                 }
@@ -264,10 +281,9 @@ header {
     }
 }
 [portfolio] {
-    padding-top     : 100px;
-    float           : left;
-    background      : #f5f5ef;
     position        : relative;
+    padding         : 100px 0;
+    background      : #f5f5ef;
     z-index         : 1;
     overflow        : hidden;
     &:before {
@@ -284,32 +300,30 @@ header {
         z-index         : -1
     }
     h1 {
+        margin-bottom   : 100px;
         width           : 100%;
         text-align      : center;
         font-size       : 16px;
         text-transform  : uppercase;
         font-weight     : normal;
-        margin-bottom   : 100px;
     }
     @itemColor : #4b4b4b;
     .itemWrap {
         display     : flex;
         flex-wrap   : wrap;
-        width       : calc(~"100% - 60px");
-        margin      : 0px 30px 30px;
+        width       : 100%;
         .item {
             display     : grid;
             grid-template-columns : 1fr 1fr;
-            min-width   : calc(~"100% - 180px");
-            width       : calc(~"100% - 180px");
+            min-width   : calc(~"100% - 100px");
+            width       : calc(~"100% - 100px");
+            margin      : 15px 0px;
+            padding     : 50px;
             transition  : 300ms;
             font-family : @font;
             border-radius: 4px;
-            padding     : 50px;
-            margin      : 15px 40px;
             background  : #fff;
-            border : 1px solid #daa36b;
-            border : 1px solid #eea4b2;
+            border      : 1px solid #eea4b2;
             @media screen and (max-width : @smallBreak) {
                 padding : 30px 10px;
                 margin  : 15px 0px;
@@ -325,6 +339,29 @@ header {
                 margin-right    : 50px;
                 margin-bottom   : 10px;
                 overflow        : hidden;
+                .overlay {
+                    position    : absolute;
+                    top         : 0;
+                    bottom      : 0;
+                    left        : 0px;
+                    right       : 0px;
+                    display     : flex;
+                    justify-content : center;
+                    align-items : center;
+                    background  : rgba(0, 0, 0, 0.8);
+                    opacity     : 0;
+                    transition  : 300ms;
+                    color       : @hover;
+                    text-decoration : none;
+                    i {
+                        font-size   : 0px;
+                        transition  : 300ms;
+                    }
+                }
+                &:hover .overlay {
+                    opacity : 1;
+                    i { font-size   : 30px; }
+                }
                 @media screen and (max-width : @midBreak) {
                     grid-row    : ~"5 / 7";
                     grid-column : ~"1 / 3";
@@ -333,7 +370,7 @@ header {
                 }
                 img {
                     transition  : 300ms;
-                    width       : 99%;
+                    width       : calc(~"100% - 2px");
                     max-width   : 500px;
                     border      : 1px solid #ccc;
                 }
@@ -431,7 +468,7 @@ header {
 [contact] {
     text-align  : center;
     min-height  : 90vh;
-    float       : left;
+    //float       : left;
     width       : 100%;
     background  : linear-gradient(to bottom right, #144f26, #190c0c);
     font-size   : 17px;

@@ -72,20 +72,30 @@ APP
         link: function($scope, $element, $attributes) {
             $scope.portfolioItems = [
                 {
+                    title : 'Bolt Logistics',
+                    link  : 'https://www.gobolt.com/',
+                    isLinkDirect : true,
+                    image : 'bolt3.png',
+                    desc  : 'A modern, mobile first, custom WordPress theme built for Bolt, a Canadian logistics company.',
+                    tech  : ['WordPress', 'LESS', 'PHP', 'jQuery']
+                },
+                {
+                    title : 'Learn Ditidaht',
+                    link  : 'http://www.learnditidaht.ca',
+                    isLinkDirect : true,
+                    image : 'ditidaht.png',
+                    desc  : 'Learn Ditidaht is a gamified language learning application (think Duolingo!) created for the Ditidaht First Nation on Vancouver Island. It features over two dozen mini games, progress tracking, and a very awesome mascot.',
+                    //desc  : 'The Ditidaht First Nation on Vancouver Island has only 6 fluent speakers of their native language. In an effort to preserve the language, Learn Ditidaht was created. I\x27ve been lucky enough to contribute to this exciting, interactive language learning tool, which is built with a combination of WordPress and React.',
+                    tech  : ['React.js', 'Redux', 'WordPress', 'PHP']
+                },
+                {
                     title : 'Project \x2744',
                     link  : 'https://www.project44.ca/',
                     isLinkDirect : true,
                     image : 'p442.png',
-                    desc  : 'Created for the Canadian Research and Mapping Association, Project \x2744 is a web showcase of the Battle of Normandy. Centered around a map of the troop movements, it includes fascinating unit war diaries and images. Currently in Beta.',
+                    desc  : 'Created for the Canadian Research and Mapping Association, Project \x2744 is a web showcase of the Battle of Normandy. Centered around a map of the troop movements, it also includes an extensive collection of unit war diaries. Currently in Beta.',
+                    //desc  : 'Created for the Canadian Research and Mapping Association, Project \x2744 is a web showcase of the Battle of Normandy. Centered around a map of the troop movements, it includes fascinating unit war diaries and images. Currently in Beta.',
                     tech  : ['React.js', 'Redux', 'Mapbox GL JS']
-                },
-                {
-                    title : 'Ditidaht',
-                    link  : 'http://www.learnditidaht.ca',
-                    isLinkDirect : true,
-                    image : 'ditidaht.png',
-                    desc  : 'The Ditidaht First Nation on Vancouver Island has only 6 fluent speakers of their native language. In an effort to preserve the language, Learn Ditidaht was created. I\x27ve been lucky enough to contribute to this exciting, interactive language learning tool, which is built with a combination of WordPress and React.',
-                    tech  : ['React.js', 'Redux', 'WordPress', 'PHP']
                 },
                 {
                     title : 'International SOS',
@@ -103,6 +113,7 @@ APP
                     desc  : 'A route optimisation tool built for Tarot Analytics. Originally built in React and Flux, most of my work on this product involved rewriting into Redux, as well as some tweaks to their React Native app.',
                     tech  : ['React.js', 'Redux', 'Leaflet', 'React Native']
                 },
+                /*
                 {
                     title : 'Yellowstone Wolf Map',
                     link  : 'http://www.rubykulikowska.com/wolf-map',
@@ -111,6 +122,7 @@ APP
                     desc  : 'The Yellowstone Wolf Map is an interactive visualization of the reintroduction of wolf populations into Yellowstone National Park. Still a work in progess.',
                     tech  : ['React.js', 'Mapbox GL JS', 'LESS']
                 },
+                */
                 {
                     title : 'BirdieFire',
                     link  : false,
