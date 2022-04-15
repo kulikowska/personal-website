@@ -1,22 +1,24 @@
 <div class="container">
-    <h1 data-aos="fade-up"> Recent Work</h1>
+    <h2 data-aos="fade-up">Recent Work</h2>
 
-    <div class="itemWrap">
-        <div class="item" ng-repeat="item in portfolioItems">
-           <div class="imgWrap">
-               <img ng-src="../images/portfolio/{{item.image}}"></img>
-               <a class="overlay" ng-if="item.link" href={{item.link}} target="_blank">
-                   <i class="fa fa-arrow-right"></i>
-               </a>
-           </div>
-           <a class="link" ng-if="item.link" href={{item.link}} target="_blank">
-               <span ng-if="item.isLinkDirect"> Visit Site!</span>
-               <span ng-if="!item.isLinkDirect">Find out More!</span>
-           </a>
-           <h2>{{item.title}}</h2> 
+    <div class="item-wrap" ng-repeat="item in portfolioItems" data-aos="fade-up">
+        <div class="item">
+            <div class="img-wrap">
+                <img ng-src="../images/portfolio/{{item.image}}" alt="portfolio item thumbnail"></img>
+                    <a class="overlay" ng-if="item.link" href={{item.link}} target="_blank">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <a class="link" ng-if="item.link" href={{item.link}} target="_blank">
+                <span ng-if="item.isLinkDirect"> Visit Site!</span>
+                <span ng-if="!item.isLinkDirect">Find out More!</span>
+            </a>
+            <h4>{{item.title}}</h4> 
             <p>{{item.desc}}</p>
             <div class="tech">
-                <span ng-repeat="tech in item.tech">{{tech}}</span>
+                <span class="skill" ng-repeat="tech in item.tech">
+                    <span class="innards">{{tech}}</span>
+                </span>
             </div>
         </div>
     </div>

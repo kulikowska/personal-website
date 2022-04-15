@@ -1,9 +1,6 @@
 <div class="contact">   
-    <div class="overLay">
-       <span class="email" data-aos="fade-down"> rubykulikowska@gmail.com </span>
-        <div class="photo-creds">
-            <i class="fa fa-camera-retro"></i>
-            <span> Photography by <a href="https://www.flickr.com/photos/anieto2k">Andrés Nieto Porras</a></span>
-        </div>
-   </div>
+    <span class="contact-email" ng-click="copyToClip()" ng-mouseleave="resetMsg()" data-aos="fade-down"> 
+        rubykulikowska@gmail.com 
+        <span class="msg {{msg[activeMsg].klass}}">{{msg[activeMsg].text}}</span>
+    </span>
 </div>
